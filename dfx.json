@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "assetiQ_backend": {
+      "candid": "src/assetiQ_backend/assetiQ_backend.did",
+      "package": "assetiQ_backend",
+      "type": "rust"
+    },
+    "assetiQ_frontend": {
+      "dependencies": [
+        "assetiQ_backend"
+      ],
+      "source": [
+        "src/assetiQ_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "assetiQ_frontend" 
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
